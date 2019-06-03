@@ -1,3 +1,4 @@
+//启动的文件（开始执行的入口）！！！！
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';

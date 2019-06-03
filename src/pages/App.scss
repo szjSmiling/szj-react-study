@@ -21,7 +21,9 @@
   .App-nav li{
     display: inline-block;
     margin-right: 20px;
-    & a{color:#fff;}
+    width:45%;
+    margin: 10px;
+    & a{color:lightgreen;}
     & a:hover{
       color:#f00;
     }
