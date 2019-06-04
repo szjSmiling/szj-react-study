@@ -18,8 +18,8 @@ function App() {
       <ul className="App-nav">
         <li><Link to="/one">组件, props, state, 事件(Link)</Link></li>
         <li><Link to="/two">条件, 循环, 表单(Link)</Link></li>
-        <li><a href="/three">事件处理(a)</a></li>
-        <li><a href="/four">(a)</a></li>
+        <li><a href="/three">状态提升(a)</a></li>
+        <li><a href="/four">组件 VS 继承(a)</a></li>
       </ul>
     </div>
   );
