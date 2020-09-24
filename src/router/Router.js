@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import RouteFallback from '../components/RouteFallback';
-import App from '../pages/App';
+import App from '../App';
 import One from '../pages/one/One';
 import Two from '../pages/two/Two';
 import Three from '../pages/three/Three';

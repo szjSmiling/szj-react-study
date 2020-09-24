@@ -6,8 +6,8 @@ import FancyBorder from '../../components/testFour/FancyBorder'
 import SplitPane from '../../components/testFour/SplitPane'
 import SignUpDialog  from '../../components/testFour/SignUpDialog'
 
-const left = <p>left---> 类似于vue中 slot (插槽) 的用法</p>
-const right = <p>right---> 类似于vue中 slot (插槽) 的用法</p>
+const left = <p>left---&gt; 类似于vue中 slot (插槽) 的用法</p>
+const right = <p>right---&gt; 类似于vue中 slot (插槽) 的用法</p>
 const text = 'JSX 标签中的所有内容都会作为一个 children prop 传递给 FancyBorder 组件。因为 FancyBorder 将 {props.children} 渲染在一个 <div> 中，被传递的这些子组件最终都会出现在输出结果中。';
 const Four = () => {
   return (
