@@ -3,16 +3,25 @@ import React, { Component } from 'react';
 
 // 引入组件
 import Home from './components/Home'
-import News from './components/News'
-
 
 class App extends Component{
+  constructor() {
+    super();
+    this.state = {
+      items: [
+        { id: 1, title: '第1行', des: 'fragment 的使用'},
+        { id: 2, title: '第2行', des: 'fragment 的使用'},
+        { id: 3, title: '第3行', des: 'fragment 的使用'}
+      ]
+    }
+  }
+  
+
   // render 模板， jsx 语法
   render () {
     return (
       <div className="App">
-        <Home />
-        <News />
+        <Home items={this.state.items} />
       </div>
     )
   }

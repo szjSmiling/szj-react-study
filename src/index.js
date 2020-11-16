@@ -48,5 +48,6 @@ serviceWorker.unregister();
         }</ul>
       5. onClick 改变 this 指向的方法
         > onClick={this.getData.bind(this)}
-        > constructor () { super(); }
+        > constructor () { super(); this.getData = this.getData.bind(this) }
+        > getData = () => { 箭头函数没有this，使用父级的this }
 */

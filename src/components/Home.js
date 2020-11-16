@@ -1,25 +1,45 @@
-import React, { Component } from 'react';
+// import React, { useState } from 'react';
+import React from 'react';
+import { ThemeContext } from './Context'
 
-class Home extends Component {
+// function Home () {
+//   const [count, setCount] = useState(0);
+
+//   return (
+//     <div>
+//       <p>You clicked {count} times</p>
+//       <button onClick={() => setCount(count + 1)}>Click me</button>
+//     </div>
+//   )
+// }
+
+
+class Home extends React.Component {
   constructor (props) {
     super();
-    // 定义数据
-    this.state = {
-      name: '张三',
-      age: 18,
-      style: {
-        color: 'red',
-      }
-    }
+    console.log(props)
   }
   render () {
+    let props = this.props;
+    let theme = this.context;
     return (
-      <>
-        <h5 title={this.state.name}>React 组件里所有的节点都要被根节点包含</h5>
-        <p style={this.state.style}>我的名字是{this.state.name}</p>
-      </>
+      <div>
+        <button {...props}
+          style={{color: theme.background}}
+        >click handel</button>
+        <dl>
+          {props.items.map(item => (
+            // 没有`key`，React 会发出一个关键警告
+            <React.Fragment key={item.id}>
+              <dt>{item.title}</dt>
+              <dd>{item.des}</dd>
+            </React.Fragment>
+          ))}
+        </dl>
+      </div>
     )
   }
 }
+Home.contextType = ThemeContext;
 
 export default Home;

@@ -2,6 +2,7 @@
 >yarn upgrade `# 用于更新包到基于规范范围的最新版本(推荐)`  
 >yarn upgrade --latest `# 忽略版本规则，升级到最新版本，并且更新 package.json`  
 `使用场景`: 主要是提交代码时, git 上的 [dependabot] 会提示不安全的依赖, 一般都是因为依赖内部引入的一些依赖版本过低导致;
+`16.8.0 React 开始支持 Hook`
 ## React & Ant & Echart 搭建管理系统 
 ### 1. 安装 `npx`, 并且简单使用
 ```
